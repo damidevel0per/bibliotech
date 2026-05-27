@@ -1,0 +1,25 @@
+### OBTENGO TODOS LOS LIBROS
+GET http://localhost:3001/libros
+
+### CREO UN LIBRO
+POST http://localhost:3001/libros
+Content-Type: application/json
+
+{
+  "nombre": "Ingeniería del software - Un enfoque práctico",
+  "autores": ["Roger S. Pressman"],
+  "categorias": ["Software", "Ingenieria de software", "Conceptos de software", "Desarrollo de software"],
+  "anioPublicacion": 2010,
+  "paginas": 805,
+  "idioma": "Español",
+  "descripcion": "Libro orientado a la enseñanza de programación en C#, con ejemplos prácticos y ejercicios para reforzar el aprendizaje.",
+  "portada": "https://online.anyflip.com/waoo/oxhi/files/mobile/1.webp",
+  "linkPdf": "https://drive.google.com/file/d/1X70WgfMPAUt9C3F0aXrNNXAaojyYs52q/view",
+  "formato": "PDF"
+}
+
+### ELIMINO UN LIBRO POR ID
+DELETE  http://localhost:3001/libros/111
+
+### OBTENGO LIBRO POR ID
+GET http://localhost:3001/libros/123
