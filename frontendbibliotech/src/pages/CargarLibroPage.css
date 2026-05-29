@@ -1,0 +1,71 @@
+.cargar-libro-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  .cargar-libro-container h2 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .cargar-libro-container h5 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #666;
+    font-weight: normal;
+  }
+  
+  .cargar-libro-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+  }
+  
+  /* Campo descripción ocupa todo el ancho */
+  .form-group:nth-last-child(2) {
+    grid-column: span 2;
+  }
+  
+  button[type="submit"] {
+    grid-column: span 2;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #4338ca;
+  }
