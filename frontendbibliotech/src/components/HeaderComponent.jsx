@@ -15,6 +15,9 @@ function HeaderComponent(){
                         <Link className="link" to="/libros">Biblioteca</Link>
                     </li>
                     <li>
+                        <Link className="link" to="/carga-libro">Gestión</Link>
+                    </li>
+                    <li>
                         <Link className="link" to="/nosotros">Nosotros</Link>
                     </li>
                 </ul>
